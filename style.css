@@ -7,7 +7,28 @@ body {
     background-color: #eee;
 }
 
-nav {
+
+
+table,th,td{
+    border: 1px solid black; 
+    border-collapse: collapse;
+    font-size: 20px;
+    width: 40%;
+    
+}
+tr:nth-child(even) {
+    background-color: #ecc619;
+  }
+tr:nth-child(odd) {
+    background-color: #c01c1c;
+    color: #ffffff;
+  }
+tr:nth-child(1) {
+    background-color: #ffffff;
+    color: black;
+}
+
+header {
     width: 100%;
     height: 100px;
     background-color: #fff;
@@ -23,7 +44,6 @@ ul {
 ul li{
     list-style: none;
     display: inline-block;
-    float: left;
     line-height: 100px;
 } 
 
@@ -41,3 +61,20 @@ a.active,a:hover{
     background: lightblue;
     transition: .5s;
 }
+
+
+footer{
+    
+        
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 22px;
+    background-color: rgb(137, 172, 192);
+    }
+    
+   
