@@ -17,10 +17,10 @@ table,th,td{
     
 }
 tr:nth-child(even) {
-    background-color: #ecc619;
+    background-color: #92c5da;
   }
 tr:nth-child(odd) {
-    background-color: #c01c1c;
+    background-color: #bd5757;
     color: #ffffff;
   }
 tr:nth-child(1) {
@@ -66,9 +66,9 @@ a.active,a:hover{
 footer{
     
         
-    position: fixed;
+    /*position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 0;*/
     width: 100%;
     text-align: center;
     margin-top: 20px;
@@ -78,3 +78,19 @@ footer{
     }
     
    
+.Section-1{
+    
+    grid-row: 1 / 3;
+
+
+
+
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 45% repeat(2, 1fr);
+    grid-template-rows: repeat(2, 20%) 60%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
