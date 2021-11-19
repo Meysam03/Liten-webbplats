@@ -138,4 +138,41 @@ header {
     background-color: rgb(216, 247, 245);
     grid-column-start: 1 ;
     grid-column-end: 4;
+    border-radius: 10px;
+}
+
+
+.hemsida{
+
+    background-image: url(pop.jpg);
+}
+
+.H-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 120px 600px 80px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+h3{
+    font-size: 55px;
+    text-align: center;
+	color: #355681;
+    font-family: 'Raleway',sans-serif;
+}
+
+
+
+
+.Intresse {
+    background-color: #000; ;
+}
+
+.I-grid {
+
+
+
+    
 }
