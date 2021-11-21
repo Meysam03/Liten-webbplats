@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
     <title>Egen Hemsida</title>
-    
+
 </head>
+
 <body>
 
     <div class="grid">
-    <header>
+        <header>
             <nav>
                 <ul>
-                    <li><a href="hemsida.html">Home</a></li>
+                    <li><a href="Index.html">Home</a></li>
                     <li><a class="active" href="Om.html">Om mig</a></li>
                     <li><a href="intresse.html">Intresse</a></li>
                 </ul>
             </nav>
-    </header>
-    
-    
-    <div class="Section1">
-        <br>
-        <br> 
-        <h1>Vem är Jag?</h1>
-        <br>
-        <p>Jag heter Meysam Rezai, Jag är född år 2003 alltså 18 år gammal kille. Jag är en elev som studerar i Teknikum. </p>
-        <p>  Jag bor med min familj in ett lägenhet i Rottne som ligger 2 Mil från växjö.</p>
-        <p>Jag tycker att jag är en lugn och ansvarig person, ibland kan jag vara stressad eller arg.</p>
+        </header>
+
+
+        <div class="Section1">                                  
+            <br>                                             <!-- Jag har använt br igen för att skapa rader. alttså min text ska börja längre ner -->
+            <br>
+            <h1>Vem är Jag?</h1>
+            <br>
+            <p>Jag heter Meysam Rezai, Jag är född år 2003 alltså 18 år gammal nu. Jag är en elev som studerar i
+                Teknikum. </p>
+            <p> Jag bor med min familj i ett lägenhet i Rottne som ligger 2 Mil från växjö.</p>
+            <p>Jag tycker att jag är en lugn och ansvarig person, ibland kan jag vara stressad eller arg.</p>
+        </div>
+
+
+        <div class="Section2">
+            <h2>Vad brukar Jag göra en vanligt vardag?</h2>
+            <br>
+            <p>Jag som alla elever som går på gymnasium får 1250 på kontot varje månad från <strong>CSN</strong>.</p>             <!--  Strong gör ordet csn fet. -->
+            <p>De pengar använder jag till att betala till olika saker som mobil abbonemang.</p>
+            <p>Jag har gjort ett tabel som visar vad jag använder mina pengar till. </p>
+        </div>
+
+
+        <div class="tabell">
+            <table>                                          
+                <tr>                                            <!-- En rad av:  -->
+                    <th>Datum</th>                               <!-- rubrik --> 
+                    <th>Vad För Något</th>
+                    <th>Belopp(kr)</th>
+                </tr>
+                <tr>                                      
+                    <td>2021-10-3</td>                            <!-- data  -->
+                    <td>Kläder</td>
+                    <td>400</td>
+                </tr>
+                <tr>
+                    <td>2021-10-9</td>
+                    <td>Kebab Pitza</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>2021-10-19</td>
+                    <td>Mobilsurf</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>2021-10-22</td>
+                    <td>Energi dryck</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>2021-10-27</td>
+                    <td>Simhallen</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>2021-10-31</td>
+                    <td>Mobil Abbonemang</td>
+                    <td>450</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Summa:</td>                   <!--  Colspan gör att raden sträcker sig till column två -->
+                    <td>1200</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="footer">
+            <footer>
+                <p>Meysam Rezai Teknikum TE20A</p>
+            </footer>
+        </div>
     </div>
-   
-   
-    <div class="Section2">
-        <h2>Vad brukar Jag göra en vanligt vardag?</h2>
-        <br>
-        <p>Jag som allra elever som går på gymnasium får 1250 på  kontot varje månad från <strong>CSN</strong>.</p>
-        <p>Den pengar använder jag till att betala till olika saker som mobil abbonemang.</p>
-        <p>Jag har gjort ett tabel som visar vad jag använder mina pengar till. </p>
-    </div>
-        
-        
-    <div class="tabell">    
-        <table width: 400px;>
-            <tr>
-                <th>Datum</th>
-                <th>vad för något</th>
-                <th>Belopp(kr)</th>
-            </tr>
-            <tr>
-                <td>2021-10-3</td>
-                <td>Kläder</td>
-                <td>400</td>
-            </tr>
-            <tr>
-                <td>2021-10-9</td>
-                <td>Kebab Pitza</td>
-                <td>100</td>
-            </tr>
-            <tr>
-                <td>2021-10-19</td>
-                <td>Mobilsurf</td>
-                <td>150</td>
-            </tr>
-            <tr>
-                <td>2021-10-22</td>
-                <td>Teknikum kiosk</td>
-                <td>20</td>
-            </tr>
-            <tr>
-                <td>2021-10-27</td>
-                <td>Simhallen</td>
-                <td>50</td>
-            </tr>
-            <tr>
-                <td>2021-10-31</td>
-                <td>Mobil Abbonemang</td>
-                <td>450</td>
-            </tr>
-            <tr>
-                <td colspan="2">Summa:</td>
-                <td>1200</td>
-            </tr>
-        
-        </table>
-    </div>
-        
-    <div class="footer">
-        <footer>
-            <p>Meysam Rezai    Teknikum TE20A</p>
-        </footer>
-    </div>
-</div>
-   
+
 </body>
-</html> 
+</html>
+
+

@@ -4,47 +4,43 @@ body {
 }
 
 
-
-ul {
-    margin: 10px 70px;
-
+header {
+    width: 100%;
+    background-color: rgb(216, 247, 245);
+    grid-column: 1/6;                               /* den sträcka sig från column 1 till 6 */
+    border-radius: 10px;                            /*border-radius används för att sätta rundade hörn på ett element*/
 }
 
+
+ul {
+    margin: 10px 70px;                             /*används för att skapa utrymme runt element. Top, höger, */
+}
+
+
+
 ul li{
-    list-style: none;
-    display: inline-block;
-    line-height: 100px;
-    grid-column-start: 1 / 3;
+    list-style: none;                                  /*  list-style: none; tar bort cirkel    */
+    display: inline-block;                              /* inline-block visar objekter  horisontellt. */
+    line-height: 100px;                                /* Egenskapen line-height anger höjden på en linje.  */
 } 
 
+
 ul li a{
-    display: block;
-    text-decoration: none;
+    display: block;                          
+    text-decoration: none;                         /*ingen utsmyckningt */
     font-size: 20px;
     font-family:  Open Sans Condensed;
     color: #1e1e1e;
-    padding: 0 20px;
+    padding: 0 20px;                               /*används för att skapa utrymme runt ett elements innehåll*/
     border-radius: 3px;
 } 
 
-a.active,a:hover{
+
+a.active,a:hover{                                   /* när musen är på och när den ät active*/
     background: rgb(153, 208, 226);
-    transition: .5s;
+    transition: .5s;                                /*  animation Hastighet*/
 }
 
-
-.Section1 {
-    grid-column: 1/4;
-    grid-row: 2;
-    
-}
-
-.Section2 {
-    grid-column: 1/3;
-    grid-row: 3;
-    
-    
-}
 
 h1,h2,h4 {
     font-family: Dejavu Sans, Arial, Verdana, sans-serif;
@@ -52,33 +48,49 @@ h1,h2,h4 {
     font-size: 32px;
 }
 
+
 p {
     font-family: Dejavu Sans, Arial, Verdana, sans-serif;
     margin-left: 45px;
     font-size: 18px;
-
-}
-
-.tabell {
-    grid-column: 2/3;
-    grid-row: 4;
-  
-
-
 }
 
 
 footer{
-    
-
     width: 100%;
-    text-align: center;
+    text-align: center;                                    /*Denna egenskap styr hur texten ska justeras*/
     margin-top: 20px;
     padding: 20px;
-    font-size: 62px;
+    font-size: 62px; 
     background-color: rgb(137, 172, 192);
-    
 }
+
+
+.grid { 
+    display: grid;                                 
+    grid-template-columns: 1fr 37% 1fr;                                 /* Jag har grid med tre column och 5 rader*/                 
+    grid-template-rows: 120px 400px 250px 500px 80px;                    
+    gap: 50px 0px;
+}
+
+
+.Section1 {
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+
+.Section2 {
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+
+.tabell {
+    grid-column: 2/3;
+    grid-row: 4;
+}
+
  
 .footer {
     grid-column: 1/4;
@@ -86,32 +98,11 @@ footer{
 }    
 
 
-
-
-
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 37% 1fr;
-    grid-template-rows: 120px 400px 250px 500px 80px;
-    gap: 50px 0px;
-    grid-auto-flow: row;
-}
-
-
-
-
-
-
-
-
-
-
-
-
 table {
     width: 100%;
     height: 100%;
 }
+
 
 table,th,td{
     border: 1px solid black; 
@@ -121,37 +112,33 @@ table,th,td{
 }
 
 
-tr:nth-child(even) {
+tr:nth-child(even) {                                   /* representerar jämn rader i min tabell*/
     background-color: #92c5da;
-  }
-tr:nth-child(odd) {
-    background-color: #bd5757;
-    color: #ffffff;
-  }
-tr:nth-child(1) {
-    background-color: #ffffff;
-    color: black;
 }
 
-header {
-    width: 100%;
-    background-color: rgb(216, 247, 245);
-    grid-column-start: 1 ;
-    grid-column-end: 6;
-    border-radius: 10px;
+tr:nth-child(odd) {                                    /* representerar udda rader i min tabbel*/
+    background-color: #bd5757;
+    color: #ffffff;
+}
+
+tr:nth-child(1) {                                     /* representerar bara första rad*/
+    background-color: #ffa41ccb;
+    color: black;
 }
 
 
 .hemsida{
 
-    background-image: url(pop.jpg);
+    background-image: url(pop.jpg);                   /*bakgrunds bild*/
 }
 
-.H-grid{
+
+.H-grid{                                      
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 120px 700px 80px;
 }
+
 
 h3{
     font-size: 55px;
@@ -161,102 +148,23 @@ h3{
 }
 
 
-.vad {
-    padding: 200px;
-}
-
-
 .Intresse {
     background-color: rgb(255, 255, 255);
 }
+
 
 .I-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 120px 600px 70px 300px 80px;
     gap: 50px 30px;
-    grid-auto-flow: row;
 }
 
-
-
-.csgo {
-    grid-column: 1;
-    grid-row: 4;
-
-}
-
-
-.pubg {
-    grid-column: 2;
-    grid-row: 4;
-
-}
-
-
-.gta{
-    grid-column: 3;
-    grid-row: 4;
-
-}
-
-.warzone{
-    grid-column: 4;
-    grid-row: 4;
-
-}
-
-.cs{
-    grid-column: 5;
-    grid-row: 4;
-
-}
-
-.info {
-    grid-column: 1/3;
-    grid-row: 3;
-    font-size: 110px;
-    border: 4px solid rgb(32, 70, 119);
-  border-radius: 12px;
-  padding: 5px;
-}
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.footer1{
-    grid-column: 1/6;
-    grid-row: 5;
-}
 
 .section3{
     grid-column: 1/4;
     grid-row: 2;
-    
-
 }
-
-
 
 
 .Lista, ol {
@@ -264,12 +172,56 @@ h3{
     grid-row: 2;
     padding: 30px 0 0 150px;
     font-family:  Open Sans Condensed;
-    font-size: 20px;
-    
-    
-    
-    
+    font-size: 22px;   
 }
+
+
+.info {
+    grid-column: 1/3;
+    grid-row: 3;
+    font-size: 110px;
+    border: 4px solid rgb(32, 70, 119);
+    border-radius: 12px;
+    padding: 5px;
+}
+
+
+.csgo {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+
+.pubg {
+    grid-column: 2;
+    grid-row: 4;
+}
+
+
+.gta{
+    grid-column: 3;
+    grid-row: 4;
+}
+
+
+.warzone{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+
+.cs{
+    grid-column: 5;
+    grid-row: 4;
+}
+
+  
+.footer1{
+    grid-column: 1/6;
+    grid-row: 5;
+}
+
+
 h5{
     padding: 30px 0 0 150px;;
     font-size: 30px;
@@ -277,7 +229,8 @@ h5{
 }
 
 
-
-
+ol, li{
+    padding-bottom:30px;        
+}
 
 
